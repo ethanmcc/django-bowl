@@ -5,6 +5,7 @@ bowling-kata in Django
 
 Build Image
 ```
+cd bowling
 docker build -t py-bowling .
 
 ```
@@ -25,9 +26,9 @@ docker exec -it DOCKERID /bin/bash
 
 run tests
 ```
-root@02fca4c04821:/var/app# pip install -r dev-requirements.txt 
-root@02fca4c04821:/var/app# cd bowling/
-root@02fca4c04821:/var/app/bowling# ./manage.py test
+# activate virtualenv
+root@02fca4c04821:/var/app# source bin/activate
+root@02fca4c04821:/var/app# ./manage.py test
 Creating test database for alias 'default'...
 F
 ======================================================================
