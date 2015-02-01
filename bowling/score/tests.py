@@ -1,13 +1,14 @@
 from django.test import TestCase
 
-from score.models import Game as Kevin
+from score.models import Game
+
 
 class BowlingTest(TestCase):
     def setUp(self):
         pass
 
     def test_gutter_game(self):
-        game = Kevin()
+        game = Game()
         for i in range(20):
             game.roll(0)
 
