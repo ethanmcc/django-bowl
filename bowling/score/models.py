@@ -2,8 +2,11 @@
 
 
 class Game():
+    def __init__(self):
+        self.rolls = []
+
     def roll(self, pins):
-        pass
+        self.rolls.append(pins)
 
     def score(self):
-        return -1
+        return sum(self.rolls)
